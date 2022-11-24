@@ -55,5 +55,5 @@ plt.figure(figsize=(10-8))
 mean_df = df.groupby(['ticker','date']).mean()
 mean_df = mean_df.unstack()
 mean_df = mean_df.xs('compound', axis = "columns").transpose()
-mean_df.plot(kind=''
-print(mean_df)
+mean_df.plot(kind='bar')
+plt.show()
