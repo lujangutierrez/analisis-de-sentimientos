@@ -15,3 +15,5 @@ for ticker in tickers:
     req = Request(url=url, headers={'user-agent': 'my-app'}) ##el url=url el parametro url que es igual a la variable url. y después especificas los 'headers' nos ayuda a requerir la data, sino no nos va a dejar acceder al url de finviz
     response = urlopen(req) ## es lo que trae req
     print(response)
+
+    
